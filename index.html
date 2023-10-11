@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://via.placeholder.com/50" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li style="float: right"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+
+    <aside id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a
+        href="https://learn.hz.nl/my/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz Learn</a
+      >
+      <a href="https://portal.hz.nl/" target="_blank" rel="noopener noreferrer"
+        >Hz Portal</a
+      >
+      <a
+        href="https://teams.microsoft.com/_?culture=nl-nl&country=nl#/school/teams-grid/General?ctx=teamsGrid"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Teams</a
+      >
+      <a
+        href="https://outlook.office365.com/mail/inbox/id/AAQkAGRkOTg3MmI1LTBlNGUtNGZmMi1hNmY0LTY4NmZlMWYzYWQwOQAQAHOpKEQIPC9HkFoYod4u0JA%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Mail</a
+      >
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+        >Github</a
+      >
+      <a
+        href="https://hz.nl/uploads/documents/OER-2016-2017-Engels-DEF-25-07-2016.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz CER</a
+      >
+      <a
+        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz IR</a
+      >
+    </aside>
+
+    <div id="main-content" class="fade-in">
+        <main>
+            <div class="nav-side-bar">
+                <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            <h1>HBO-ICT</h1>
+
+      <div class="container">
+      <article>
+
+        <img
+          style="float: right; width: 200px"
+          src="images/logo.png"
+          alt="simple=power"
+        />
+        <p>
+          Imagine a world where imagination knows no bounds, where the
+          fantastical becomes reality, and where magic resides in lines of code
+          and digital dreams. Picture this: a universe composed entirely of
+          blocks. Consider battling monsters with the power of plants. While
+          this may seem far from reality, it is already a part of the modern
+          gaming world, where the constraints of reality are no obstacle to
+          bringing these incredible ideas to life.
+        </p>
+
+        <p>
+          Gaming is just the tip of the iceberg. Envision a world where messages
+          can be received through your glasses without the need for a mobile
+          device. While this might appear as distant as flying cars, it is much
+          closer than you think because
+          <a
+            href="https://www.apple.com/apple-vision-pro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Apple</a
+          >
+          is on the brink of making this mind-bending concept a reality.
+        </p>
+
+        <p>
+          Since my childhood, I've been fascinated by technology and its ability
+          to achieve the seemingly impossible, such as taking flight in video
+          games or watching countless videos of, vlogs, reviews, tutorials,
+          gaming, and live streams. It enables the creation of Artificial
+          Intelligence, robots, 3D printing, and various other innovations.
+        </p>
+
+        <p>
+          So... why? Being able to create everything you think about gives you
+          the feeling of freedom and fulfillment. To be able to escape from the
+          world through these apps or games. To come and relax in these peaceful
+          worlds, even if you want to create havoc. Information at our
+          fingertips, helping others, and whatnot. To fulfill, freedom, and
+          happiness are at the center of my motivation.
+        </p>
+
+        <p>
+          HBO-ICT offers the opportunity to make this my workflow in a
+          structured learning environment.
+        </p>
+      </article>
+    </div>
+
+    <div class="container">
+      <img
+        style="float: right; width: 200px"
+        src="images/hardware-image.jpg"
+        alt="hardware-image"
+      />
+    </div>
+    <div class="container"> 
+      <article>
+        <h2>Skill I would like to develop:</h2>
+        <ul style=>
+          <li>Website development</li>
+          <li>App and software development</li>
+          <li>Online Security</li>
+          <li>Handeling data</li>
+        </ul>
+      </article>
+    </div>
+    <div class="container">
+      <p>More information about <a href="profile.html">me</a></p>
+    </div>
+        </main>
+  </div>
+    <script src="javascript/main.js"></script>
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main-content").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main-content").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }</script>
+</body>
+</html>
