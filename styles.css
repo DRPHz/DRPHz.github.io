@@ -52,6 +52,11 @@ div#nav ul li a:hover {
   color: #f8f9fa;
 }
 
+.active {
+  background-color: #f39c12;
+}
+
+
 .sidenav {
   width: 0;
   position: fixed;
