@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/main.js"></script>
+    <title>articlevssection</title>
+  </head>
+  <body>
+    <div id="nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/profile.html">Profile</a></li>
+        <li><a href="/dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="/blog.html">Blog</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <aside id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a
+        href="https://learn.hz.nl/my/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz Learn</a
+      >
+      <a href="https://portal.hz.nl/" target="_blank" rel="noopener noreferrer"
+        >Hz Portal</a
+      >
+      <a
+        href="https://teams.microsoft.com/_?culture=nl-nl&country=nl#/school/teams-grid/General?ctx=teamsGrid"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Teams</a
+      >
+      <a
+        href="https://outlook.office365.com/mail/inbox/id/AAQkAGRkOTg3MmI1LTBlNGUtNGZmMi1hNmY0LTY4NmZlMWYzYWQwOQAQAHOpKEQIPC9HkFoYod4u0JA%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Mail</a
+      >
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+        >Github</a
+      >
+      <a
+        href="https://hz.nl/uploads/documents/OER-2016-2017-Engels-DEF-25-07-2016.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz CER</a
+      >
+      <a
+        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hz IR</a
+      >
+    </aside>
+    <div id="main-content" class="fade-in">
+      <main>
+        <div class="nav-side-bar">
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+            >&#9776;</span
+          >
+        </div>
+        <section>
+          <article>
+            <h1>Article vs Section: The better element</h1>
+
+            <p>
+              Hello there! It appears that there's an ongoing discussion within
+              the coding community regarding the use of &lt;article&gt; and
+              &lt;section&gt; elements in HTML. This debate primarily centers
+              around the decision of which element should be nested within the
+              other. While both elements serve similar purposes, they do have
+              some key distinctions worth exploring.
+            </p>
+
+            <h3>HTML &lt;article&gt; Element:</h3>
+            <p>
+              The &lt;article&gt; element is primarily designed for containing
+              self-contained pieces of content that make sense on their own,
+              such as blog posts, news articles, or forum posts. When it comes
+              to SEO and search engine algorithms, the &lt;article&gt; element
+              holds more significance. Search engines recognize &lt;article&gt;
+              elements as discrete pieces of content, making it easier to index
+              and rank them.
+            </p>
+
+            <h3>HTML &lt;section&gt; Element:</h3>
+            <p>
+              On the other hand, the &lt;section&gt; element is used to group
+              related content together within a web page. It's all about
+              structuring your content into different sections or blocks, like
+              chapters in a book. If you have an &lt;h1&gt; element before a
+              &lt;section&gt;, and another &lt;h1&gt; element inside the
+              &lt;section&gt;, the one inside the &lt;section&gt; is typically
+              treated as an &lt;h2&gt; because &lt;section&gt; elements are used
+              to divide the page into subsections.
+            </p>
+
+            <h4>
+              Here's a breakdown of the key differences between &lt;article&gt;
+              and &lt;section&gt;:
+            </h4>
+
+            <ol>
+              <li>
+                <strong>Content Type</strong>:
+                <ul>
+                  <li>&lt;article&gt;: Self-contained, stand-alone content.</li>
+                  <li>&lt;section&gt;: Groups related content together.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>SEO Importance</strong>:
+                <ul>
+                  <li>
+                    &lt;article&gt;: More important for search engine
+                    algorithms.
+                  </li>
+                  <li>
+                    &lt;section&gt;: Less SEO-focused; mainly for content
+                    organization.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Heading Hierarchy</strong>:
+                <ul>
+                  <li>
+                    &lt;article&gt;: Can have its own headings, including
+                    &lt;h1&gt;.
+                  </li>
+                  <li>
+                    &lt;section&gt;: Typically uses lower-level headings (e.g.,
+                    &lt;h2&gt;) within it.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <p>
+              When deciding whether to use &lt;article&gt; or &lt;section&gt;,
+              consider the nature of your content. If it's a distinct piece of
+              content that could be shared or referenced independently (like a
+              blog post), &lt;article&gt; is a suitable choice. If you're
+              organizing content into different parts or sections within a
+              single page (like chapters in a book), &lt;section&gt; is the way
+              to go.
+            </p>
+
+            <summary>
+              In conclusion, while both &lt;article&gt; and &lt;section&gt; have
+              their roles in structuring web content, understanding their
+              differences can help you make more informed decisions when
+              building your HTML documents. It's all about selecting the element
+              that best aligns with your content's purpose and hierarchy.
+            </summary>
+
+            <p>
+              More information about this subject can be found
+              <a
+                href="https://www.smashingmagazine.com/2020/01/html5-article-section/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >
+              and a discussion form about this subject can be found
+              <a
+                href="https://discuss.codecademy.com/t/why-would-a-section-element-be-placed-inside-an-article-element/483554"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >
+            </p>
+            <section>
+              <img
+                src="/images/example-sectionvsarticle.png"
+                alt="example-sectionvsarticle"
+              />
+            </section>
+          </article>
+        </section>
+        <p class="footer-author">Damian de Ruijter - 09/07/23</p>
+      </main>
+    </div>
+  </body>
+</html>

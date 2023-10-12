@@ -11,15 +11,15 @@
       rel="stylesheet"
     />
     <script src="main.js"></script>
-    <title>My profile</title>
+    <title>Blog</title>
   </head>
   <body>
     <div id="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="profile.html">Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
@@ -72,34 +72,30 @@
             >&#9776;</span
           >
         </div>
-        <div class="image-wrapper">
-          <img
-            style="width: 200px; height: 167px"
-            src="images/cat-image.jpg"
-            alt="Cat says hello"
-          />
-        </div>
-        <h1>Damian de Ruijter</h1>
 
-        <div class="container">
-          <article>
-            <h2>Background information:</h2>
-            <ul>
-              <li>Born in: 2004</li>
-              <li>Age: 18</li>
-              <li>Lives in: Hoek</li>
-              <li>Education: Havo: Natuur en gezondheid.</li>
-            </ul>
-          </article>
-          <article>
-            <h2>A little about me:</h2>
-            <p>I like gaming, sports, one piece and animals.</p>
-            <p>
-              If I were to describe my strengths they would be independence, and
-              being a fast learner. As for weaknesses, it takes some time to get
-              used to new environments
+        <h1>Blog Posts:</h1>
+
+        <div class="blog-card">
+          <img
+            src="images/example-sectionvsarticle.png"
+            alt="section-and-article"
+          />
+          <div class="blog-content">
+            <h2>
+              <a href="posts/article-vs-section.html"
+                >Article vs Section: The better element</a
+              >
+            </h2>
+            <p class="blog-summary">
+              A deep dive into the differences between 'article' and 'section'
+              tags in HTML. Understanding these can aid in better structuring
+              your web content...
             </p>
-          </article>
+            <a href="posts/article-vs-section.html" class="read-more"
+              >Read More</a
+            >
+            <p class="blog-meta">By Damian de Ruijter - 09/07/23</p>
+          </div>
         </div>
       </main>
     </div>
