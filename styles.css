@@ -429,6 +429,10 @@ article img {
   margin: 20px 0;
 }
 
+div.qa-container h2 {
+  text-align: center;
+}
+
 /* article-author */
 
 .article-author {
