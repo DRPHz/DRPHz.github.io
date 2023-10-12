@@ -187,6 +187,12 @@ h2 {
   height: auto;
 }
 
+.personal-img img {
+
+  border-radius: 50%;
+
+}
+
 /* footer  */
 
 
