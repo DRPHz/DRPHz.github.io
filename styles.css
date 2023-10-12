@@ -9,6 +9,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
 }
 
 /* general links */
@@ -115,6 +121,7 @@ div#nav ul li a:hover {
   background-color: #ffffff;
   border: 2px solid black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 0 auto;
 }
 
 #main-content h1, #main-content h2 {
@@ -179,6 +186,46 @@ h2 {
   width: 200px;
   height: auto;
 }
+
+/* footer  */
+
+
+footer {
+  flex-shrink: 0; 
+  background-color: #000;
+  color: #f8f9fa;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid orange;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.footer-author {
+  font-size: 16px;
+  font-weight: bold;
+  color: orange;
+
+}
+
+
 
 /* dashboard table */
 
@@ -358,9 +405,9 @@ article img {
   margin: 20px 0;
 }
 
-/* footer-author */
+/* article-author */
 
-.footer-author {
+.article-author {
   position: fixed;
   bottom: 10px;   
   right: 10px;     
@@ -368,3 +415,68 @@ article img {
   padding: 5px;
 }
 
+/* FAQ Styles */
+.faq-container {
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.question {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background: #fff;
+  width: 100%;
+  text-align: left;
+  border-bottom: 2px solid black;  
+  position: relative;
+  transition: background 0.3s;
+}
+
+.question:hover {
+  background: #f39c12;  
+}
+
+.question:after {
+  content: '\002B';
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.question.active:after {
+  content: '\2212';
+}
+
+.question.active {
+  background: #f39c12;  
+  color: #fff;
+}
+
+.answer {
+  max-height: 0;  
+  padding: 0 20px;
+  background: #ffffff;
+  border-bottom: 2px solid black;  
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.answer p, .answer ol {
+  margin: 10px 0;
+}
+
+.answer a {
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.answer a:hover {
+  color: #0056b3;
+}
