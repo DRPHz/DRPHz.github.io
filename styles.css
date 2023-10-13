@@ -163,7 +163,7 @@ div#nav ul li a:hover {
 /* text style  */
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'sans-serif';
   font-weight: 500;
   font-size: 36px; 
 }
